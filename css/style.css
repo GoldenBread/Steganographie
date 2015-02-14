@@ -1,0 +1,228 @@
+/* pour l'image d'arrière plan */
+body {
+    background-image : url(Images/fond.png);
+}
+
+
+
+/* ICI on insère le style de tous les objets définis par un identifiant */
+
+/*L.Thierry*/
+
+body {
+    background: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+#Titre{
+	position : absolute; 
+    width :350px;
+	height : 50px;
+	
+    padding: 30px;
+	margin : auto;
+	
+    background-color: white;
+	border : 3px solid black;
+	box-shadow: 20px 20px 40px #555;
+	border-radius : 10px;
+	
+	color: red;  
+    font-size:24px;
+    font-family: Comic sans ms;
+    text-align: center;
+	
+	cursor : default;
+	
+}
+
+.niveaudegris{
+	font-size: 18px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 10px;
+	border: solid 5px #c9c9c9;
+	transition: border 0.3s;
+	text-align : center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #c9c9c9;
+}
+
+.RGB{
+}
+
+.caseR{
+	width: 240px;
+	
+}
+
+.caseV{
+	width: 240px;
+	
+}
+
+.caseB{
+	width: 240px;
+	
+}
+
+
+
+#section {
+    background: #efefef;
+	margin: 20px 20% 100px 20%;
+	border-radius: 10px;
+	height: 675px;
+}
+
+input[type="text"] {
+	margin: 0;
+	width: 70px;
+	font-size: 18px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 10px;
+	transition: border 0.3s;
+	text-align : center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #c9c9c9;
+	transition: color 0.3s;
+	
+}
+
+input[type="text"]:focus {
+	outline: none;
+	color: #969696;
+}
+
+
+[id="caseR"]{
+	border: solid 5px #e50b65;	
+}
+
+[id="caseR"]:focus{
+	border: solid 5px #b91c46;
+}
+
+[id="caseV"]{
+	border: solid 5px #00be00;	
+}
+
+[id="caseV"]:focus{
+	border: solid 5px #008a00;
+}
+
+[id="caseB"]{
+	border: solid 5px #00b4fa;	
+}
+
+[id="caseB"]:focus{
+	border: solid 5px #008ad2;
+}
+
+[class|="BoutonType1"] { /* Tout ce qui commence par BoutonType1 */
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	border: solid 1px #efefef;
+	-webkit-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+	color: #fff;
+	background-color: #c94b11;
+	width: 120px;
+	padding: 10px;
+}
+
+
+[class|="BoutonType2"] { /* Tout ce qui commence par BoutonType2 */
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	border: solid 1px #efefef;
+	-webkit-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+	color: #fff;
+	background-color: #008ad2;
+	width: 120px;
+	padding: 10px;
+	
+}
+	
+	
+input[type="button"]:hover {
+	color: #fff;
+	background-color: #3d3d3d;
+}
+
+input[id="file"] {
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	border: none;
+	-webkit-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+	color: #fff;
+	background-color: #c94b11
+}
+	
+input[type="file"]:hover {
+	color: #fff;
+	background-color: #3d3d3d;
+}
+
+
+#canvas:hover {
+	cursor : crosshair ;    Ici seul le curseur sera modifier en pointer lors du survol le reste du style est donc conservé
+	}	
+
+/* ICI on insère le style de tous les objets définis par une class */
+
+
+
+
+
+
+/* Quelques styles usuels ******************************************************************************
+
+#Identifiant{ 							Pour le style de l'objet dont l'id est "Identifiant"
+
+	position : absolute;    			Position en coordonnée par rapport au coin en haut à gauche
+    width :350px; 						Longueur en px ou en %
+	height : 50px;						Hauteur en px ou en %
+	Top : 100px;						Position du coin supérieur en px ou en % 
+	Left : 120 px;						Position du côté gauche en px ou en %
+	
+    padding: 30px;						Marge Interieure auto auto ou en px ou en %
+	margin : auto;						Marge exterieure  auto ou en px ou en %
+	
+    background-color: white;			Couleur du fond
+    border : 3px solid black;			Bordure  : épaisseur type couleur
+	box-shadow: 20px 20px 40px grey; 	Ombrage décalage horizontal puis vertical pouis couleur
+	border-radius : 10px;				Arrondir les angles du cadre avec un arc de cercle de rayon 10 pixel	
+	
+	
+	color: red;  						Couleur du texte
+    font-size:24px;						Taille de la Police
+	font-family: Comic sans ms; 		Famille de Police
+	font-weight : bold;					Police en gras;	
+    
+	cursor : defaut;					Curseur 
+}
+
+.Identifiant:hover { pour modifier le style initiale lorsque la souris survol l'objet repéré par cet identifiant
+	cursor : pointer ;    Ici seul le curseur sera modifier en pointer lors du survol le reste du style est donc conservé
+}	
+
+.Class{ Pour le style de tous les objets dont la class est "Class"
+
+}
+
+.Class:hover { pour modifier le style initiale lorsque la souris survol les objets repérés par cette classe
+}
+
+*/
+
+
