@@ -1,0 +1,149 @@
+<HTML>
+	<TITLE>
+	Filtres images
+	</TITLE>
+	
+	<HEAD>
+		<meta charset="iso-8859-15"><!-- incompatibilité de l'utf-8 avec le JQUERY combiné à TinyMCE -->
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.css">
+ 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="screen"/>  		
+		<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui/jquery-ui.js"></script>
+		<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+		<!-- TinyMCE -->
+		<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+		<script type="text/javascript">
+		tinymce.init({
+			language : "fr_FR",
+			plugins: "code",
+			mode : "specific_textareas",
+			editor_selector : "resultat",
+			width: "100%",
+			height: "60%"
+		 });
+		</script>
+		<!------------->
+	</HEAD>
+	
+	<BODY>
+		
+		
+		<div id="content">
+			<div id="titre"><!-- Titre/Logo -->
+				<img src="img/logo.png" alt="Stéganographie ISN" id="logo">
+			</div>			
+			
+			<div style="position:relative;width:45%;margin-left:27.5%;margin-right:27.5%;max-height:80%;background-color:white;border-radius:8px;">
+				<div class="div-title">
+					<p>Aide</p>
+				</div>
+				<div class="div-content" style="padding-top:50px;">
+					<p class="paide">
+						<span class="spanaide">
+							Pour pouvoir utiliser ce programme, il faut commencer par conna&icirc;tre son but.
+						</span>
+					</p>
+					<p class="paide">
+						<span class="spanaide">
+							La st&eacute;ganographie est l'art de la dissimulation. Elle consiste &agrave; cacher un message au sein d'un autre message anodin, de sorte que l'on ignore l'existence m&ecirc;me du secret. Alors que la cryptographie repose sur le fait que le message ne soit pas compris, la st&eacute;ganographie repose sur le fait que le message ne soit pas trouv&eacute;.
+						</span>
+					</p>
+					<p class="paide">
+						<span class="spanaide">
+							Dans ce programme le message que vous voulez cacher est dissimul&eacute; dans votre image.
+						</span>
+					</p>
+					<p class="paide">
+						<span class="spanaide">
+							Pour ne pas se rendre compte du subterfuge l'image doit avoir le m&ecirc;me poids avant et apr&egrave;s son traitement pour se faire nous vous recommandons d'utiliser une image non compress&eacute; au format .bmp.
+						</span>
+					</p>
+					<p class="paide">
+						<span class="spanaide">
+							Une fois cet &eacute;l&eacute;ment requis en votre possession suivez les &eacute;tapes suivantes&nbsp;:
+						</span>
+					</p></br>
+					<ol>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Cliquez sur parcourir pour ins&eacute;rer votre image
+								</span>
+							</p>
+						</li>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Ins&eacute;rer votre message &agrave; cacher
+								</span>
+							</p>
+						</li>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Si vous voulez suivre l'avancement du processus en d&eacute;tail ouvrez le terminal
+								</span>
+							</p>
+						</li>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Cliquez sur le bouton Encodage pour lancer le processus Texte vers Image
+								</span>
+							</p>
+						</li>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Une fois le processus fini &laquo;&nbsp;enregistrer sous&nbsp;&raquo; l'image &agrave; l'aide du menu contextuel (clique droit) OU cliquez sur le bouton T&eacute;l&eacute;chargement
+								</span>
+							</p>
+						</li>
+					</ol></br></br>
+					<p class="paide">
+						<span class="spanaide">
+							Pour faire le processus inverse, soit le d&eacute;codage d'une image contenant un message&nbsp;:
+						</span>
+					</p></br>
+					<ol>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Cliquez sur parcourir pour ins&eacute;rer l'image cod&eacute;e
+								</span>
+							</p>
+						</li>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Si vous voulez suivre l'avancement du processus en d&eacute;tail ouvrez le terminal
+								</span>
+							</p>
+						</li>
+						<li>
+							<p class="paide">
+								<span class="spanaide">
+									Cliquez sur 
+								</span>
+								<span class="spanaide">
+									le bouton D&eacute;codage pour lancer le processus
+								</span>
+								<span class="spanaide">
+									Image vers Texte
+								</span>
+							</p>
+						</li>
+					</ol>
+					<div><a href="index.html"class="button"><p><i class="fa fa-home fa-x"></i> Retourner sur la page principale</p></a></div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		
+	</BODY>
+	
+	
+</HTML>

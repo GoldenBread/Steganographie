@@ -1,80 +1,289 @@
-/* pour l'image d'arrière plan */
-body {
-    background-image : url(Images/fond.png);
-}
-
-
-
 /* ICI on insère le style de tous les objets définis par un identifiant */
 
 /*L.Thierry*/
 
+@media (max-height: 799px) { /* "Pseudo" Responsive design */
+
+	#canvas{
+		max-height:250px;
+	}
+	
+	.div-content {
+	height:62%;		
+	}
+}
+
+@media (min-height: 800px) { /* "Pseudo" Responsive design */
+	.div-content {
+	height:70%;		
+	}	
+}
+
+@media (min-height: 800px) and (max-height: 819px){
+	#canvas{
+		max-height:405px;
+	}
+}
+@media (min-height: 820px) and (max-height: 839px){
+	#canvas{
+		max-height:415px;
+	}
+}
+@media (min-height: 840px) and (max-height: 859px){
+	#canvas{
+		max-height:435px;
+	}
+}
+@media (min-height: 860px) and (max-height: 879px){
+	#canvas{
+		max-height:455px;
+	}
+}
+
+@media (min-height: 880px) and (max-height: 899px){
+	#canvas{
+		max-height:475px;
+	}
+}
+
+@media (min-height: 900px){
+	#canvas{
+		max-height:490px;
+	}
+}
+
 body {
-    background: #ffffff;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+    background: #eaedf1;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-#Titre{
-	position : absolute; 
-    width :350px;
-	height : 50px;
-	
-    padding: 30px;
-	margin : auto;
-	
-    background-color: white;
-	border : 3px solid black;
-	box-shadow: 20px 20px 40px #555;
-	border-radius : 10px;
-	
-	color: red;  
-    font-size:24px;
-    font-family: Comic sans ms;
-    text-align: center;
-	
-	cursor : default;
-	
+#nav li {
+    display: inline;
 }
 
-.niveaudegris{
-	font-size: 18px;
-	appearance: none;
-	box-shadow: none;
-	border-radius: none;
-	padding: 10px;
-	border: solid 5px #c9c9c9;
-	transition: border 0.3s;
-	text-align : center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #c9c9c9;
-}
-
-.RGB{
-}
-
-.caseR{
-	width: 240px;
-	
-}
-
-.caseV{
-	width: 240px;
-	
-}
-
-.caseB{
-	width: 240px;
-	
+#titre{
+	position : relative; 
+    width :100%;
 }
 
 
+/* slide du pavé gauche pour afficher le terminal */
 
-#section {
-    background: #efefef;
-	margin: 20px 20% 100px 20%;
-	border-radius: 10px;
-	height: 675px;
+#pavegauchepremier {
+    width:100%;
+    height:100%;
+    float:left;
+}
+#pavegauchesecond {
+    width:100%;
+    height:100%;
+}
+#pavegauche {
+    width:50%;
+	height:90%;
+    overflow:hidden;
+	padding-left:1%;
+	padding-right:1%;
+}
+/* police Titre Div */
+@font-face {
+    font-family: "Signika-Semibold";
+	src: url('font/Signika-Semibold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "Proxima";
+	src: url('font/ProximaNova-Regular.ttf') format('truetype');
+}
+
+#terminal {
+	font-family: Courier New;
+	font-size: 12;
+	height:100%;
+	width:100%;
+}
+
+#fenetre {
+	height:200px;
+	width:600px;
+}
+
+#boutons{
+	margin-bottom:5%;
+}
+
+#div-1 {
+	position:absolute;
+	width:45%;
+	max-height:80%;
+	float:left;
+	background-color:#ffffff;
+	border-radius:8px;
+}
+
+#div-2 {
+	position:relative;
+	width:45%;
+	max-height:80%;
+	float:right;
+	background-color:white;
+	border-radius:8px;
+}
+
+.div-title {
+	position:absolute;
+    font-family: "Signika-Semibold";
+	font-size: 18;
+	background-color:#323a45;
+	text-align:center;
+	color:white;
+	width:100%;
+	height:50px;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	
+}
+
+
+.div-content {
+	text-align:center;	
+	margin-top:50px;
+	position:relative;
+	padding:5px;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+	
+}
+
+#div-button{
+	cursor: default;
+	float:bottom;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+}
+
+.div-subbutton-1{
+	float:right;
+	width:33%;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;	
+}
+
+#div-subbutton-2{
+	float:right;
+	width:34%;
+}
+
+.imgaide{
+	max-width:400px;
+}
+
+.paide{
+	margin-bottom: 0cm;
+	line-height: 100%;
+}
+
+.spanaide{
+	font-size: small;
+}
+
+#canvas{
+	/*display: none;*/
+	max-width:100%;
+	position:relative;
+}
+
+#progressBar {
+	width: 100%;
+	height: 22px;
+	border: 1px solid #111;
+	background-color: #292929;
+	/* Design */
+	background: #292929;
+	border: 1px solid #111;	
+	border-radius: 5px;	
+	overflow: hidden;
+	box-shadow: 0 0 5px #333;	
+	position:relative;
+}
+
+#progressBar div {
+	height: 100%;
+	color: #fff;
+	text-align: right;
+	line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+	width: 0;
+	background-color: #0099ff;
+	/*Design*/
+	background-color: #1a82f7;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0099FF), to(#1a82f7)); 
+	background: -webkit-linear-gradient(top, #0099FF, #1a82f7); 
+	background: -moz-linear-gradient(top, #0099FF, #1a82f7); 
+	background: -ms-linear-gradient(top, #0099FF, #1a82f7); 
+	background: -o-linear-gradient(top, #0099FF, #1a82f7);
+
+}
+
+#histoire {
+	font-family: "Verdana";
+}
+
+
+
+H4 {
+    font-size: 150%;
+	font-weight: bold;	
+}
+
+
+UL {
+	font-size: 75%;	
+}
+
+#content {
+    vertical-align:middle;
+	width:70%;
+	position:absolute;
+	margin-left:15%;
+	margin-right:15%;
+	margin-top:0px;
+	height:97%;
+}
+
+#logo {
+	width:45%;
+	height:auto;
+	max-width:540px;
+}
+
+/**************************************************/
+a.button{
+  padding: 0 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px #d9d9d9 solid;
+  color: #262626;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  font-size: .875rem;
+  line-height: 1;
+  margin: .15625rem 0;
+  position: relative;
+}
+
+a:hover.button{
+  border-color: #787878;
+}
+
+a:active.button{
+  background: #eeeeee;
+  color: #262626;
+  box-shadow: none;
 }
 
 input[type="text"] {
@@ -99,59 +308,52 @@ input[type="text"]:focus {
 }
 
 
-[id="caseR"]{
-	border: solid 5px #e50b65;	
-}
 
-[id="caseR"]:focus{
-	border: solid 5px #b91c46;
-}
-
-[id="caseV"]{
-	border: solid 5px #00be00;	
-}
-
-[id="caseV"]:focus{
-	border: solid 5px #008a00;
-}
-
-[id="caseB"]{
-	border: solid 5px #00b4fa;	
-}
-
-[id="caseB"]:focus{
-	border: solid 5px #008ad2;
-}
-
-[class|="BoutonType1"] { /* Tout ce qui commence par BoutonType1 */
+.BoutonType1 {
+	text-align:center;
 	display: inline-block;
-	font-family: "Roboto Slab", serif;
-	font-weight: 300;
-	border: solid 1px #efefef;
+	font-family: "Proxima";
+	font-size: 11;
+	width:100%;
+	border: solid 1px #eaedf1;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
 	-webkit-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
-	color: #fff;
-	background-color: #c94b11;
-	width: 120px;
-	padding: 10px;
+	color: #5e6d81;
+	background-color:#f9fafc;
+	padding-top: 10px;
 }
 
 
-[class|="BoutonType2"] { /* Tout ce qui commence par BoutonType2 */
+#BoutonType2 { /* Tout ce qui commence par BoutonType2 */
+	text-align:center;
 	display: inline-block;
-	font-family: "Roboto Slab", serif;
-	font-weight: 300;
-	border: solid 1px #efefef;
+	font-family: "Proxima";
+	font-size: 11;
+	width:100%;
+	border: solid 1px #eaedf1;
+	border-bottom-width: 0px;
 	-webkit-transition: background 0.2s, color 0.2s;
 	transition: background 0.2s, color 0.2s;
-	color: #fff;
-	background-color: #008ad2;
-	width: 120px;
-	padding: 10px;
+	color: #5e6d81;
+	background-color: #f9fafc;
+	padding-top: 10px;
 	
 }
 	
-	
+.BoutonType1:hover{
+	background-color: #ffffff;
+	border-color: #ffffff;
+	color:14b9d6;
+}
+
+#BoutonType2:hover{
+	background-color: #ffffff;
+	border-top-color: #ffffff;
+}
+
 input[type="button"]:hover {
 	color: #fff;
 	background-color: #3d3d3d;
@@ -177,6 +379,8 @@ input[type="file"]:hover {
 #canvas:hover {
 	cursor : crosshair ;    Ici seul le curseur sera modifier en pointer lors du survol le reste du style est donc conservé
 	}	
+
+
 
 /* ICI on insère le style de tous les objets définis par une class */
 
